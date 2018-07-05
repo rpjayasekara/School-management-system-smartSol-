@@ -1,0 +1,62 @@
+<% include ../partials/header %>
+
+<link href="/stylesheets/fullcalendar.css" rel="stylesheet" media="screen">
+<link href="/stylesheets/calendar.css" rel="stylesheet">
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li class="current"><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="/stats"><i class="glyphicon glyphicon-stats"></i> View users </a></li>
+                    <li><a href="/leave"><i class="glyphicon glyphicon-list"></i> Leave management</a></li>
+                    <li><a href="/timetable"><i class="fas fa-calendar-times"></i> Time table</a></li>
+                    <li><a href="notice"><i class="fas fa-envelope-square"></i> Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="col-md-1"></div>
+
+            <!--leave applications-->
+
+            <div class="col-md-8">
+
+                <h2 style="border-bottom:20px solid white;">Leave Application</h2>
+
+
+                <div class="form-group">
+                    <label for="disabledInput" class="col-sm-2 control-label" ">Name</label>
+                    <div class="col-sm-10">
+                        <input class="form-control"  type="text" placeholder="Mr.Rajapaksha" disabled>
+                    </div>
+
+                    <label for="disabledInput" class="col-sm-2 control-label" ">Registration ID</label>
+                    <div class="col-sm-10">
+                        <input class="form-control"  type="text" placeholder="160222M" disabled>
+                    </div>
+
+                    <label for="disabledInput" class="col-sm-2 control-label" ">From(Date)</label>
+                    <div class="col-sm-10">
+                        <input class="form-control"  type="text" placeholder="March 10 2018" disabled>
+                    </div>
+
+                    <label for="disabledInput" class="col-sm-2 control-label" ">To(Date)</label>
+                    <div class="col-sm-10">
+                        <input class="form-control"  type="text" placeholder="March 12 2018" disabled>
+                    </div>
+
+                    <label for="disabledInput" class="col-sm-2 control-label" ">Reason</label>
+                    <div class="col-sm-10">
+                        <input class="form-control"  type="text" placeholder="Medical reason" disabled>
+                    </div>
+
+                    <a href="#" class="btn btn-info" role="button" style="margin:50px;">Approve</a>
+                    <a href="#" class="btn btn-info" role="button" style="margin:50px;">Disapprove</a>
+
+                </div>
+        </div>
+    </div>
+
+<% include ../partials/footer %>

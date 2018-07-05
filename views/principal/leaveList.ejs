@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+<link href="/stylesheets/fullcalendar.css" rel="stylesheet" media="screen">
+<link href="/stylesheets/calendar.css" rel="stylesheet">
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li class="current"><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="/stats"><i class="glyphicon glyphicon-stats"></i> View users </a></li>
+                    <li><a href="/leave"><i class="glyphicon glyphicon-list"></i> Leave management</a></li>
+                    <li><a href="/timetable"><i class="fas fa-calendar-times"></i> Time table</a></li>
+                    <li><a href="notice"><i class="fas fa-envelope-square"></i> Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="col-md-1"></div>
+
+            <!--leave applications-->
+
+            <div class="col-md-7">
+
+                <h2>Leave Applications</h2>
+
+                <ul class="list-group">
+                    <li class="list-group-item">Mr.Perera <span button type="button"  class="btn info" style="float: right;font-size: 16px;"><a href="/leave/approve">View application</a></button></span></li>
+                    <li class="list-group-item">Mrs.Kulathunga<span button type="button" class="btn info" style="float: right;font-size: 16px;"><a href="/leave/approve">View application</a></button></span></li>
+                    <li class="list-group-item">Ms.Rajapaksha<span button type="button" class="btn info" style="float: right;font-size: 16px;"><a href="/leave/approve">View application</a></button></span></li>
+                    <li class="list-group-item">Mr.Jayarathna<span button type="button" class="btn info" style="float: right;font-size: 16px;"><a href="/leave/approve">View application</a></button></span></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+<% include ../partials/footer %>

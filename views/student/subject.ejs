@@ -1,0 +1,76 @@
+<% include ../partials/header %>
+
+<link href="/stylesheets/fullcalendar.css" rel="stylesheet" media="screen">
+<link href="/stylesheets/calendar.css" rel="stylesheet">
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li class="submenu current">
+                        <a href="#">
+                            <i class="fas fa-users"></i> Subjects
+                            <span class="caret pull-right"></span>
+                        </a>
+                        <!-- Sub menu -->
+                        <ul>
+                            <li><a href="/users/new">Buddhism</a></li>
+                            <li><a href="/users">Sinhala</a></li>
+                            <li><a href="/users">Science</a></li>
+                            <li><a href="/users">History</a></li>
+                            <li><a href="/users">Mathematics</a></li>
+                            <li><a href="/users">English</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/stats"><i class="glyphicon glyphicon-stats"></i> Attendence </a></li>
+                    <li><a href="/timetable"><i class="fas fa-calendar-times"></i> Time table</a></li>
+                    <li><a href="notice"><i class="fas fa-envelope-square"></i> Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <!--<div class="content-box-large">-->
+                <div class="col-md-8" style="background-color: #dcdcdc;background-color:#F5FFFA;">
+                    <div class="row" >
+                        <h4 style="text-align:center;">Science & Technology</h4>
+                        <ul>
+                            <a href="scienceNews.html" ><i class="material-icons">message</i>      News forum</a>
+                        </ul>
+
+                    </div>
+                    <div class="row" style="padding:10px;">
+                        <h5 >   1 January - 7 January</h5>
+                        <ul>
+                            <a href="/subjects/science/assignment"><i class="fa fa-file-text" style="font-size:24px"></i>  Assignment</a>
+                        </ul>
+
+                    </div>
+                    <div class="row" style="padding:10px;">
+                        <h5 >   8 January - 14 January</h5>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-2" >
+
+
+                    <div class="sidebar content-box" ">
+                    <ul class="nav">
+                        <!-- Main menu -->
+
+                        <li><a href="stats.html"><i class="glyphicon glyphicon-stats"></i> Activity</a></li>
+                        <li><a href="tables.html"><i class="glyphicon glyphicon-list"></i> Grades</a></li>
+                        <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Notifiations</a>
+                            <p style="margin:10px;">No announcement have been posted yet !</p></li>
+
+                    </ul>
+                </div>
+            <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+<% include ../partials/footer %>

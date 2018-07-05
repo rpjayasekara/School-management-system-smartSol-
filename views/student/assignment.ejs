@@ -1,0 +1,75 @@
+<% include ../partials/header %>
+
+<link href="/stylesheets/fullcalendar.css" rel="stylesheet" media="screen">
+<link href="/stylesheets/calendar.css" rel="stylesheet">
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li class="submenu current">
+                        <a href="#">
+                            <i class="fas fa-users"></i> Subjects
+                            <span class="caret pull-right"></span>
+                        </a>
+                        <!-- Sub menu -->
+                        <ul>
+                            <li><a href="/users/new">Buddhism</a></li>
+                            <li><a href="/users">Sinhala</a></li>
+                            <li><a href="/users">Science</a></li>
+                            <li><a href="/users">History</a></li>
+                            <li><a href="/users">Mathematics</a></li>
+                            <li><a href="/users">English</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/stats"><i class="glyphicon glyphicon-stats"></i> Attendence </a></li>
+                    <li><a href="/timetable"><i class="fas fa-calendar-times"></i> Time table</a></li>
+                    <li><a href="notice"><i class="fas fa-envelope-square"></i> Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <!--<div class="content-box-large">-->
+                <div class="col-md-9">
+                    <div class="row">
+                        <h2>Assignment </h2>
+                        <p style="margin-left: 5%;margin-right: 35%; border:1px solid #d3d3d3;padding:20px;">
+                        You should submit a zip file containing all the documents including jasper files. Maximum pages for the project proposal. Word limit is 1000-1500.
+                        </p>
+                        <h3>Submission status</h3>
+                        <table class="table table-bordered" style="width:50%">
+
+                            <tbody>
+                                <tr>
+                                    <td>Submission status</td>
+                                    <td>No attempt</td>
+                                </tr>
+                                <tr>
+                                    <td>Grading status</td>
+                                    <td>No graded</td>
+                                </tr>
+                                <tr>
+                                    <td>Due data</td>
+                                    <td>Monday, 12 March 2018, 12:00 AM</td>
+                                </tr>
+                                 <tr>
+                                    <td>Submitted date</td>
+                                    <td>                     </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                        <a href="/subjects/science/assignment/submission" class="btn btn-primary" style="margin: 50px 300px;">Add submission</a>
+
+                    </div>
+                </div>
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>
