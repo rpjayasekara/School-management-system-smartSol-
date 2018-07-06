@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+<link href="/stylesheets/fullcalendar.css" rel="stylesheet" media="screen">
+<link href="/stylesheets/calendar.css" rel="stylesheet">
+
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="/users/students"><i class="glyphicon glyphicon-stats"></i> View users </a></li>
+                    <li><a href="/check"><i class="glyphicon glyphicon-list"></i> Leave management</a></li>
+                    <li><a href="/timetable"><i class="fas fa-calendar-times"></i> Time table</a></li>
+                    <li class="current"><a href="notice"><i class="fas fa-envelope-square"></i> Announcements</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-md-8" style="background-color:#F5FFFA; height:250px;border-right: 20px solid white;">
+            <ul>
+                <a href="viewAnnouncements.html" ><i class="fas fa-comment" style="font-size:24px"></i>view announcements</a>
+            </ul>
+            <div class="form-group">
+                <label for="comment">Add a new announcement:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+
+    </div>
+</div>
+
+
+<% include ../partials/footer %>
