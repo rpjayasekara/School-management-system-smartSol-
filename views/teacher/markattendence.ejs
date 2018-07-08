@@ -1,0 +1,65 @@
+<% include ../partials/header %>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <% include navbar %>
+        </div>
+        <div class="col-md-10">
+            <div class="content-box-large">
+                <div class="panel-heading">
+                    <div class="media-heading"><h2>Attendance details </h2></div>
+                    <br>
+                    <div class="list-group-item-heading"><h4>Date : <%= new Date().toLocaleDateString() %></h4></div>
+                </div>
+
+                <form class="form-horizontal" role="form" action="/teachers/markattendence" id="attendenceForm" onsubmit="return validateAttendenceForm()" method="POST">
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Index No</th>
+                            <th>State</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+
+                        <% students.forEach(function (student) {  %>
+                            <tr>
+                                <td><%= student.username %></td>
+                                <td>
+                                    <div class="form-group">
+                                        <select id="state" name=<%= student.username %> class="form-control">
+                                            <option selected="selected">select</option>
+                                            <option>Present</option>
+                                            <option >Absent</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        <%})%>
+
+                        </tbody>
+                    </table>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>
