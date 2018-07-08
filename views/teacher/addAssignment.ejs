@@ -1,0 +1,82 @@
+<% include ../partials/header %>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <% include navbar %>
+        </div>
+        <div class="col-md-10">
+            <div class="content-box-large">
+                <div class="panel-heading">
+                    <div class="panel-title">Leave details</div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" action="/teachers//assignment" id="leaveForm" onsubmit="return validateForm()" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Module</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="module" name="module" placeholder="Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" placeholder="Description" rows="3" name="description" id="description" required></textarea>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Class</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="class" name="class" placeholder="Class" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group"> <!-- Date input -->
+                            <label for="inputEmail3" class="col-sm-2 control-label">Due Date</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" id="duedate" name="duedate" placeholder="MM/DD/YYYY" type="date" required/>
+                            </div>
+                        </div>
+                        <div class="form-group"> <!-- Date input -->
+                            <label for="inputEmail3" class="col-sm-2 control-label">Time </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="time" name="time" placeholder="HH/MM" type="time" required/>
+                            </div>
+                        </div>
+                        <div class="form-group"> <!-- Date input -->
+                            <label for="inputEmail3" class="col-sm-2 control-label">Input file</label>
+                            <div class="col-sm-10">
+                                    <input type="file" class="form-control-file" id="file" name="file" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>
