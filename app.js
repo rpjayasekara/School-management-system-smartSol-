@@ -6,8 +6,8 @@ var express    = require("express"),
     User        = require("./models/user"),
     Admin       = require("./models/admin"),
     seedDB     = require("./seeds"),
-    expressValidator = require('express-validator');
-
+    expressValidator = require('express-validator'),
+    multer = require('multer');
 
 // =====require routes =======
 var indexRoutes      = require("./routes/index"),
@@ -23,7 +23,7 @@ app.use(bodyparser.urlencoded({extended: true}));
 app.set('view engine',"ejs");
 
 app.use(express.static(__dirname + "/public"));
-
+app.use(multer({dest: './public/upload/temp'}).single('file'));
 // connect with DB
 mongoose.connect("mongodb://localhost/SMS");
 
