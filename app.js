@@ -5,14 +5,15 @@ var express    = require("express"),
     LocalStrategy = require("passport-local"),
     User        = require("./models/user"),
     Admin       = require("./models/admin"),
-    seedDB     = require("./seeds");
+    seedDB     = require("./seeds"),
+    expressValidator = require('express-validator');
 
 
 // =====require routes =======
 var indexRoutes      = require("./routes/index"),
     usersRoutes      = require("./routes/users"),
     subjectRoutes      = require("./routes/subject"),
-    leaveRoutes      = require("./routes/leave")
+    teacherRoutes    = require("./routes/teachers");
 
 
 
@@ -39,6 +40,29 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+
+
+
+// Express Validator Middleware
+app.use(expressValidator({
+    errorFormatter: function (param, msg, value) {
+        var namespace = param.split('.')
+            , root = namespace.shift()
+            , formParam = root;
+
+        while (namespace.length) {
+            formParam += '[' + namespace.shift() + ']';
+        }
+        return {
+            param: formParam,
+            msg: msg,
+            value: value
+        };
+    }
+}))
+
+
+
 //=====Set current user=====
 app.use(function(req, res, next){
     res.locals.currentUser = req.user;
@@ -57,7 +81,7 @@ seedDB();
 app.use("/users", usersRoutes);
 app.use("/", indexRoutes);
 app.use("/subjects", subjectRoutes);
-app.use("/leave", leaveRoutes);
+app.use("/teachers", teacherRoutes);
 
 
 

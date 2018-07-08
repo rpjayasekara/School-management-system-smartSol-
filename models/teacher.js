@@ -13,7 +13,8 @@ var teacherSchema = mongoose.Schema({
     email      : String,
     birthDay   : String,
     address    : String,
-    username : String
+    username : String,
+    noOfLeave: Number
 });
 
 module.exports = mongoose.model("Teacher", teacherSchema);
