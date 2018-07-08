@@ -7,13 +7,18 @@ var studentSchema = mongoose.Schema({
         id: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "User"
-        },
-        index_no: String
+        }
     },
     email      : String,
     birthDay   : String,
     address    : String,
-    username : String
+    username : String,
+    class : {
+         id: {
+               type: mongoose.Schema.Types.ObjectId,
+               ref: "Class"
+           }
+       },
 });
 
 module.exports = mongoose.model("Student", studentSchema);

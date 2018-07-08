@@ -13,7 +13,11 @@ var teacherSchema = mongoose.Schema({
     email      : String,
     birthDay   : String,
     address    : String,
-    username : String
+    username : String,
+    class : String,
+    grade : String,
+    subject : String,
+    isClassTeacher : Boolean
 });
 
 module.exports = mongoose.model("Teacher", teacherSchema);

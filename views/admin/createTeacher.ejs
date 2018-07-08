@@ -16,13 +16,13 @@
                     <li><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                     <li class="submenu current">
                         <a href="#">
-                            <i class="fas fa-users"></i> User
+                            <i class="fas fa-users"></i> Create user
                             <span class="caret pull-right"></span>
                         </a>
                         <!-- Sub menu -->
                         <ul>
-                            <li><a href="/users/new">Create user</a></li>
-                            <li><a href="/users/students">View Users</a></li>
+                            <li><a href="/users/new/student">Student</a></li>
+                            <li><a href="/users/new/teacher">Teacher</a></li>
                         </ul>
                     </li>
                     <li><a href="/stats"><i class="glyphicon glyphicon-stats"></i> Statistics </a></li>
@@ -38,7 +38,7 @@
                     <div class="panel-title">Acount details</div>
                 </div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" action="/users" method="POST">
+                    <form class="form-horizontal" role="form" action="/users/teacher" method="POST">
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">First name</label>
                             <div class="col-sm-10">
@@ -51,10 +51,16 @@
                                 <input type="text" class="form-control" id="inputEmail3" placeholder="Name" name="secondName">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">User name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name" name="username">
+                            </div>
+                        </div>
                         <div class="form-group"> <!-- Date input -->
                             <label for="inputEmail3" class="col-sm-2 control-label">Birthday</label>
                             <div class="col-sm-10">
-                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
                             </div>
                         </div>
                         <div class="form-group">
@@ -68,19 +74,75 @@
                             <div class="col-md-10">
 
                                 <select class="form-control" id="select-1" name="type">
-                                    <option>Student</option>
-                                    <option>Principal</option>
                                     <option>Teacher</option>
                                 </select>
 
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Index number</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="Index number" name="index">
+                            <label class="col-md-2 control-label" for="select-1">Class teacher</label>
+                            <div class="col-md-10">
+
+                                <select class="form-control" id="select-1" name="classTeacher">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="select-1">Teaching grade</label>
+                            <div class="col-md-10">
+
+                                <select class="form-control" id="select-1" name="grade">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="select-1">Teaching class</label>
+                            <div class="col-md-10">
+
+                                <select class="form-control" id="select-1" name="class">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="select-1">Teaching Sunject</label>
+                            <div class="col-md-10">
+
+                                <select class="form-control" id="select-1" name="subject">
+                                    <option>Sinhala</option>
+                                    <option>Buddhism</option>
+                                    <option>Science</option>
+                                    <option>Maths</option>
+                                    <option>English</option>
+                                    <option>History</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <!--<div class="form-group">-->
+                        <!--<label for="inputEmail3" class="col-sm-2 control-label">Grade</label>-->
+                        <!--<div class="col-sm-10">-->
+                        <!--<input type="text" class="form-control" id="inputEmail3" placeholder="Grade" name="index">-->
+                        <!--</div>-->
+                        <!--</div>-->
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="submit" class="btn btn-primary">Submit</button>
