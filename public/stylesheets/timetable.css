@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    width :80%;
+
+}
+td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+
+}
+td {
+    text-align: center;
+}
+caption {
+    padding: 10px;
+}
+
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #6699CC;
+    color: white;
+}
