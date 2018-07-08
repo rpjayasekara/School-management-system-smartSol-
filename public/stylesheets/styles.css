@@ -377,6 +377,7 @@ footer .copy{
   background: -o-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
   background-color: #eff0f3;
+    background-image: url(http://codeteachers.com/wp-content/uploads/2014/09/stem-girls-coding-kids.jpg);
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -389,7 +390,7 @@ body {
 
 .login-wrapper {
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 50px;
     width: 500px;
     text-align: center;
@@ -418,9 +419,10 @@ body {
 }
 .login-wrapper .box h6 {
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 600;
+    color:white;
 }
 .login-wrapper .box input[type="text"],
 .login-wrapper .box input[type="password"] {

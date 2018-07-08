@@ -18,6 +18,12 @@ router.get("/science/assignment", isLoggedIn, function (req,res) {
 router.get("/science/assignment/submission", isLoggedIn, function (req,res) {
     res.render("student/submission");
 });
+router.get("/science/newsForum", isLoggedIn, function (req,res) {
+    res.render("student/newsForum");
+});
+router.get("/science/lectureSlides", isLoggedIn, function (req,res) {
+    res.render("student/lectureSlides");
+});
 
 router.get("/courseMaterials", isLoggedIn, function (req,res) {
     res.render("teacher/courseMaterials");
