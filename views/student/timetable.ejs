@@ -1,0 +1,141 @@
+<% include ../partials/header %>
+
+<link href="/stylesheets/fullcalendar.css" rel="stylesheet" media="screen">
+<link href="/stylesheets/calendar.css" rel="stylesheet">
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li class="submenu current">
+                        <a href="#">
+                            <i class="fas fa-users"></i> Subjects
+                            <span class="caret pull-right"></span>
+                        </a>
+                        <!-- Sub menu -->
+                        <ul>
+                            <li><a href="/users/new">Buddhism</a></li>
+                            <li><a href="/users">Sinhala</a></li>
+                            <li><a href="/users">Science</a></li>
+                            <li><a href="/users">History</a></li>
+                            <li><a href="/users">Mathematics</a></li>
+                            <li><a href="/users">English</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/stats"><i class="glyphicon glyphicon-stats"></i> Attendence </a></li>
+                    <li><a href="/timetable"><i class="fas fa-calendar-times"></i> Time table</a></li>
+                    <li><a href="notice"><i class="fas fa-envelope-square"></i> Notice</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--time table-->
+        <div class="col-md-8" style="background-color:#F5FFFA;">
+            <h1>Time Table</h1>
+
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>1st period</td>
+                    <td>English</td>
+                    <td>&nbsp;</td>
+                    <td>Science</td>
+                    <td>Science</td>
+                    <td>&nbsp</td>
+
+                </tr>
+                <tr>
+                    <td>2nd period</td>
+                    <td>English</td>
+                    <td>&nbsp</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Maths</td>
+
+                </tr>
+                <tr>
+                    <td>3rd period</td>
+                    <td>&nbsp;</td>
+                    <td>Buddhism</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp</td>
+                    <td>Sinhala</td>
+
+                </tr>
+                <tr>
+                    <td>4th period</td>
+                    <td>&nbsp;</td>
+                    <td>English</td>
+                    <td>&nbsp;</td>
+                    <td>History</td>
+                    <td>History</td>
+                </tr>
+                <tr>
+                    <td>Lunch Time </td>
+                </tr>
+                <tr>
+                    <td>5th period</td>
+                    <td>&nbsp;</td>
+                    <td>English</td>
+                    <td>Sinhala</td>
+                    <td>&nbsp</td>
+                    <td>Maths</td>
+                </tr>
+                <tr>
+                    <td>6th period</td>
+                    <td>IT</td>
+                    <td>IT</td>
+                    <td>&nbsp;</td>
+                    <td>English</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>7th period</td>
+                    <td>Science</td>
+                    <td>Commerce</td>
+                    <td>Commerce</td>
+                    <td>English</td>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>8th period</td>
+                    <td>IT</td>
+                    <td>English</td>
+                    <td>&nbsp;</td>
+                    <td>Sinhala</td>
+                    <td>History</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!--side nav-->
+        <div class="col-md-2" >
+
+
+            <div class="sidebar content-box" ">
+            <ul class="nav">
+                <!-- Main menu -->
+
+                <li><a href="stats.html"><i class="glyphicon glyphicon-stats"></i> Activity</a></li>
+                <li><a href="tables.html"><i class="glyphicon glyphicon-list"></i> Grades</a></li>
+                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Notifiations</a>
+                    <p style="margin:10px;">No announcements have been posted yet !</p></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<% include ../partials/footer %>

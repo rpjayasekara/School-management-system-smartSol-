@@ -15,14 +15,15 @@ body {
 
 /* Footer */
 
-footer{
-   background-color:#2c3742;
-   box-shadow:inset 0px 0px 3px #111;
-   color:#fff;
-   font-size:14px;
-   line-height:25px;
-   padding:10px 0px 10px 0px;
-   bottom: 0px;
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height:10px
 }
 
 footer a{
@@ -51,11 +52,11 @@ footer .copy{
 
 /* Logo & Navigation */
 
-.header{
-   height:50px;
-   background-color: #2c3742;
-}
+.header {
+    height: 50px;
+    background-color: black;
 
+}
 .header .logo h1{
    font-size:30px;
    margin:0px;
@@ -387,10 +388,11 @@ body {
 /** Login & Signup **/
 
 .login-wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 500px;
+    text-align: center;
 }
 
 
