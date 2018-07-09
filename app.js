@@ -71,7 +71,7 @@ app.use(function(req, res, next){
 
 // seed the db
 
-seedDB();
+// seedDB();
 
  //====calling routes===
 // app.get("/",function (req,res) {

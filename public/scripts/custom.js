@@ -1,3 +1,13 @@
+function checkGrade(graded,marks) {
+ if(graded==true) {
+    document.forms["marksform"]["marks"].value=marks;
+   document.forms["marksform"]["marks"].innerHTML ="Graded";
+   } else {
+     document.forms["marksform"]["marks"].innerHTML ="Not Graded";
+     }
+}
+
+
 $(document).ready(function(){
 
 

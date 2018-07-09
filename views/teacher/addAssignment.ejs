@@ -15,22 +15,69 @@
         <div class="col-md-10">
             <div class="content-box-large">
                 <div class="panel-heading">
-                    <div class="panel-title">Leave details</div>
+                    <div class="panel-title">Add Assignments</div>
                 </div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" action="/teachers//assignment" id="leaveForm" onsubmit="return validateForm()" method="POST" enctype="multipart/form-data">
+                    <form class="form-horizontal" role="form" action="/teachers/assignment" id="leaveForm" onsubmit="return validateForm()" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
                                 <input class="form-control" type="text" id="name" name="name" placeholder="Name" required>
                             </div>
                         </div>
+
+
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Module</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" id="module" name="module" placeholder="Name" required>
+                            <label class="col-md-2 control-label" for="select-1">Grade</label>
+                            <div class="col-md-10">
+
+                                <select class="form-control" id="select-1" name="grade">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                </select>
+
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="select-1">Class</label>
+                            <div class="col-md-10">
+
+                                <select class="form-control" id="select-1" name="class">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="select-1">Subject</label>
+                            <div class="col-md-10">
+
+                                <select class="form-control" id="select-1" name="subject">
+                                    <option>Sinhala</option>
+                                    <option>Buddhism</option>
+                                    <option>Science</option>
+                                    <option>Maths</option>
+                                    <option>English</option>
+                                    <option>History</option>
+                                </select>
+
+                            </div>
+                        </div>
+
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Description</label>
@@ -40,13 +87,6 @@
                         </div>
 
 
-
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Class</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" id="class" name="class" placeholder="Class" required>
-                            </div>
-                        </div>
 
                         <div class="form-group"> <!-- Date input -->
                             <label for="inputEmail3" class="col-sm-2 control-label">Due Date</label>
