@@ -257,7 +257,7 @@ router.post("/teacher", isLoggedIn, function (req,res) {
 });
 
 
-router.get("/students", isLoggedIn, function (req,res) {
+router.get("/view/student", isLoggedIn, function (req,res) {
     Student.find({},function (err,students) {
         if(err){
             console.log(err);
@@ -267,7 +267,7 @@ router.get("/students", isLoggedIn, function (req,res) {
     })
 });
 
-router.get("/teachers", isLoggedIn, function (req,res) {
+router.get("/view/teacher", isLoggedIn, function (req,res) {
     Teacher.find({},function (err,teacher) {
         if(err){
             console.log(err);

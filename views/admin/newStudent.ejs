@@ -10,27 +10,7 @@
 <div class="page-content">
     <div class="row">
         <div class="col-md-2">
-            <div class="sidebar content-box" style="display: block;">
-                <ul class="nav">
-                    <!-- Main menu -->
-                    <li><a href="/dashbord"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                    <li class="submenu">
-                        <a href="#">
-                            <i class="fas fa-users"></i> Create user
-                            <span class="caret pull-right"></span>
-                        </a>
-                        <!-- Sub menu -->
-                        <ul>
-                            <li><a href="/users/new/student">Student</a></li>
-                            <li><a href="/users/new/teacher">Teacher</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/stats"><i class="glyphicon glyphicon-stats"></i> Statistics </a></li>
-                    <li><a href="/leave"><i class="glyphicon glyphicon-list"></i> Leave management</a></li>
-                    <li><a href="/timetable"><i class="fas fa-calendar-times"></i> Time table</a></li>
-                    <li><a href="notice"><i class="fas fa-envelope-square"></i> Notice</a></li>
-                </ul>
-            </div>
+            <% include navBar %>
         </div>
         <div class="col-md-10">
             <div class="content-box-large">
@@ -42,25 +22,25 @@
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">First name</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name" name="firstName">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name" name="firstName" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">Second name</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name" name="secondName">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name" name="secondName" required>
                             </div>
                         </div>
                         <div class="form-group"> <!-- Date input -->
                             <label for="inputEmail3" class="col-sm-2 control-label">Birthday</label>
                             <div class="col-sm-10">
-                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="date" max="2018-07-10"/>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Address</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" placeholder="Address" rows="3" name="address"></textarea>
+                                <textarea class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
                             </div>
                         </div>
                         <div class="form-group">
